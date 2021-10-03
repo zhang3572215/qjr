@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+	<!-- 	<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		 -->
+          <meta http-equiv="pragram" content="no-cache" />
+          <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate"  />
+          <meta http-equiv="expires" content="0" />
+		 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"/> 
+		<link rel="icon" href="<%= BASE_URL %>favicon.ico">
+		<!-- <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=a0efe965ec811ebb539842f532bb8f72&plugin=AMap.CitySearch"></script>  -->
+		<title>清洁人</title>
+		<% for (var jsFilePath of htmlWebpackPlugin.files.js) { %>
+			<link rel="preload" href="<%= jsFilePath %>" as="script">
+		<% } %>
+		<% for (var cssFilePath of htmlWebpackPlugin.files.css) { %>
+			<link rel="preload" href="<%= cssFilePath %>" as="style">
+		<% } %>
+	</head>
+	<body>
+		<noscript>
+			<strong>We're sorry but default doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+		</noscript>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+	<!-- 	<script type="text/javascript" charset="utf-8"
+		    src="https://gw.alipayobjects.com/os/rmsportal/xsxusXNIcXwiGqtNiyOd.js"
+		    chat_url="https://cschat-ccs.aliyun.com/index.htm"
+		    logo_src="https://i.alipayobjects.com/e/201401/1tdi7nR70h.png"
+		    logo_position="rt"
+		    tntInstId="_1s9qSim&scene=SCE00007159">
+		</script> -->
+	</body>
+</html>
