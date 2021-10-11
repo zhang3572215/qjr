@@ -295,14 +295,16 @@
 
 			window.addEventListener('popstate', function(e) { //后退事件置空
 				let url = document.URL.split('/')[document.URL.split('/').length - 1]
+				// if (document.URL.split('/')[document.URL.split('/').length - 1][0]=='?') { //在首页时候禁止返回
+				// 	history.pushState(null, null, document.URL);
+				// }
+                    
 				if (document.URL.split('/')[document.URL.split('/').length - 1].includes('index')) { //在首页时候禁止返回
 					history.pushState(null, null, document.URL);
 				}
 			});
 		},
-		mounted(){
-			
-		},
+
 		beforeRouteLeave(to, from, next) {
 			this.scrollTop = document.documentElement.scrollTop || document.body.scrollTop
 			next()

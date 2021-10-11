@@ -60,6 +60,7 @@
 					</div> -->
                 </div>
             </div>
+			<index-slice />
             <!-- 		<div class='classification'>
 				<div class='classification-info' @click="toClean(10)">
 					<img class='info-img' src="../assets/air-clean.png" alt="">
@@ -93,20 +94,20 @@
 					</div>
 				</div>
 			</div> -->
-            <div class='office-classification'>
+<!--            <div class='office-classification'>
                 <div class='classification-left' @click="dot(2)">
                     <div class='left-a'>办公室清洁定制</div>
-                    <div class='left-b'>M+n方案</div>
+                    <div class='left-b'>M+n方案</div> -->
                     <!-- <div class='left-c'>深度+日常方案</div> -->
                     <!-- <div class='left-d'><img src="../assets/active11.png" alt=""></div> -->
-                    <div class='left-btn'>
+<!--                    <div class='left-btn'>
                         立即定制
                     </div>
                 </div>
                 <div class='classification-right'>
-                    <div class='classification-top' @click="dot(1)">
+                    <div class='classification-top' @click="dot(1)"> -->
                         <!-- <img src="../assets/fastest.png" alt=""> -->
-                        <div class='right-a'>
+<!--                        <div class='right-a'>
                             办公室单次保洁
                         </div>
                         <div class='right-b'>精细保洁，随时预约</div>
@@ -181,7 +182,7 @@
                 </div>
             </div>
             <div class='nav' v-if='false'>
-            </div>
+            </div> -->
 
             <!-- 	<div class='office'>
 				<div class='total-meadl'>
@@ -208,12 +209,12 @@
 					</div>
 				</div>
 			</div> -->
-            <div class='content-bottom'>
+<!--            <div class='content-bottom'>
 
-                <div class='add-clean' @click="addClean" v-if='false'>
+                <div class='add-clean' @click="addClean" v-if='false'> -->
                     <!-- <img class='clean-img' src='../assets/addClean.png'></img> -->
 
-                    <div class='add-clean-left'>
+    <!--                <div class='add-clean-left'>
                         <div class='add-tit'>
                             <span class='tit-1'>加入</span>
                             <span class='tit-2'>清洁人</span>
@@ -227,7 +228,7 @@
                     <div class='add-clean-right'>
                         <img src="../assets/purse.png" alt="">
                     </div>
-                </div>
+                </div> -->
 
                 <!-- <div class='news' v-if='showPage== "basic"'>
 					<div v-if="banner.length > 1 ">
@@ -257,7 +258,7 @@
 					<img class='left-img' src="../assets/recevieceCurtains.png" alt="" @click="recevieceCurtains">
 					<img class='right-img' src="../assets/receviceCapet.png" @click="receviceCapet" alt="">
 				</div> -->
-                <div class='cleaner-info'>
+              <!--  <div class='cleaner-info'>
                     <div class='tit'>
                         热门推荐
                     </div>
@@ -286,7 +287,7 @@
                                 <div class='programme-info'>包月参考价</div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <div class='bottom-content'>
 						<div class='bottom-first'>
 							<img src="../assets/phone-3.png" alt="">
@@ -316,25 +317,25 @@
 							床垫清洗
 						</div>
 					</div> -->
-                </div>
-                <div class='cleaner-info'>
+                <!-- </div> -->
+<!--                <div class='cleaner-info'>
                     <div class='tit'>
                         其他服务
                     </div>
-                    <div class='other-service'>
+                    <div class='other-service'> -->
                         <!-- toClean(10) -->
-                        <div class='service' @click="toCustomer('技术清洁清咨询')">
+<!--                        <div class='service' @click="toCustomer('技术清洁清咨询')">
                             <img class='type' src="../assets/air-cleaning.png" alt="">
                             <div>空调清洗</div>
-                        </div>
+                        </div> -->
                         <!-- toClean(4) -->
-                        <div class='service  service-position' @click="toCustomer('技术清洁清咨询')">
+      <!--                  <div class='service  service-position' @click="toCustomer('技术清洁清咨询')">
                             <img class='type' src="../assets/curtains-cleaning.png" alt="">
                             <div>窗帘清洗</div>
                             <img class='sameDay' src='../assets/sameDay.png'>
-                        </div>
+                        </div> -->
                         <!-- toClean(8) -->
-                        <div class='service' @click="toCustomer('技术清洁清咨询')">
+       <!--                 <div class='service' @click="toCustomer('技术清洁清咨询')">
                             <img class='type' src="../assets/mattress-cleaning-1.png" alt="">
                             <div>床垫清洗</div>
                         </div>
@@ -346,7 +347,7 @@
                             <img class='type' src="../assets/stone-1.png" alt="">
                             <div>石材养护</div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <div class='cleaner-top'>
 						<div class='clean-office' @click='toOffice'>
 							办公清洁
@@ -367,7 +368,7 @@
 							床垫清洗
 						</div>
 					</div> -->
-                </div>
+                <!-- </div>
                 <div class='clean-info'>
                     <div class='security'>
                         <div class='security-tit'>安全</div>
@@ -397,7 +398,7 @@
                     <div class='bottom-second'>
                         清洁人（厦门）信息科技有限公司
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class='new-sign'><img src="../assets/new-sign.png" alt=""></div> -->
                 <!-- <div class='clean-company'>
 					清洁人（厦门）信息科技有限公司
@@ -450,6 +451,7 @@
 
 <script>
     import * as axios from '../untils/ajax.js'
+	import indexSlice from './IndexSlice.vue'
     import {
         swiper,
         swiperSlide
@@ -687,6 +689,7 @@
             },
         },
         components: {
+			indexSlice,
             swiper,
             swiperSlide,
             customer,
