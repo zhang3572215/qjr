@@ -17,6 +17,6 @@ import indexSlice from '@/components/IndexSlice'
     }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>

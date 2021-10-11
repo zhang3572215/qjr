@@ -264,7 +264,7 @@
     }
 </script>
 
-<style lang="less" scoped>
+<style scoped>
 .qjr-index-group {
     background-color: #f8f8f9;
 }
@@ -293,7 +293,6 @@
 .qjr-categorys {
     display: grid;
     grid-template-columns: repeat(16,1fr);
-    // grid-gap: 5px;
 }
 .qjr-categorys-item {
     background-size: cover;
